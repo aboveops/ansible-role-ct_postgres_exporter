@@ -2,7 +2,7 @@
 - name: "{{ postgres_exporter_prefix }}: postgres exporter"
   docker_container:
     image: "{{ postgres_exporter_docker_image }}"
-    name: "postgress_exporter"
+    name: "{{ postgres_exporter_ct_name }}"
     ports:
       - "{{ postgres_exporter_bind_ip }}:{{ postgres_exporter_port }}:9187"
     env:

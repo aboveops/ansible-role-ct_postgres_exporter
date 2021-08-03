@@ -1,5 +1,6 @@
 ---
 postgres_exporter_prefix: "=== POSTGRESS EXPORTER ==="
+postgres_exporter_ct_name: "postgres-exporter"
 postgres_exporter_docker_state: started
 postgres_exporter_docker_restart_policy: always
 postgres_exporter_database_port: '5432'
