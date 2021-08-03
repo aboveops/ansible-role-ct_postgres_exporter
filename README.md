@@ -42,4 +42,5 @@ Author Information
 ------------------
 
 Anastasia Muinova, <nirvana@freehck.com>
+
 Dmitrii Kashin, <freehck@freehck.com>
