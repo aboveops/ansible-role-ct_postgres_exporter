@@ -1,0 +1,13 @@
+---
+- name: "{{ postgres_exporter_prefix }}: postgres exporter"
+  docker_container:
+    image: "{{ postgres_exporter_docker_image }}"
+    name: "postgress_exporter"
+    ports:
+      - "{{ postgres_exporter_bind_ip }}:{{ postgres_exporter_port }}:9187"
+    env:
+      DATA_SOURCE_NAME: "postgresql://{{ postgres_exporter_database_user }}:{{ postgres_exporter_database_password }}@{{ postgres_exporter_database_ip }}:{{ postgres_exporter_database_port }}/{{ postgres_exporter_base }}?sslmode=disable"
+    state: "{{ postgres_exporter_docker_state }}"
+    recreate: "{{ postgres_exporter_docker_recreate }}"
+    restart_policy: "{{ postgres_exporter_docker_restart_policy }}"
+...

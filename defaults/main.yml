@@ -1,0 +1,13 @@
+---
+postgres_exporter_prefix: "=== TADA POSTGRESS EXPORTER ==="
+postgres_exporter_docker_state: started
+postgres_exporter_docker_restart_policy: always
+postgres_exporter_database_port: '5432'
+postgres_exporter_docker_recreate: true
+postgres_exporter_docker_image: "quay.io/prometheuscommunity/postgres-exporter:latest"
+# postgres_exporter_bind_ip: "{{ backnet_ip }}"
+# postgres_exporter_database_user: tadauser
+# postgres_exporter_base: tadabase
+# postgres_exporter_database_password: "{{ tada_psql_password }}"
+# postgres_exporter_database_ip: " {{ backnet_ip }}"
+...
