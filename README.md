@@ -1,3 +1,6 @@
+# DEPRECATION NOTICE
+This role has been deprecated in favor of [`almaops.ct_postgres_exporter`](https://galaxy.ansible.com/almaops/ct_postgres_exporter)
+
 aboveops.ct_postgres_exporter
 =========
 
